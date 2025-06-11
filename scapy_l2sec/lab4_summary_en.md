@@ -17,7 +17,7 @@ This lab focused on simulating Layer 2 attacks and implementing protective measu
 - Static and DHCP IP assignments.
 - NAT and ACL rules on router for Internet access.
 
-![topology](screenshot/topology.jpg)
+![topology](screenshots/topology.jpg)
 
 ### DHCP Protection
 - DHCP starvation simulated with Scapy script.
@@ -25,26 +25,26 @@ This lab focused on simulating Layer 2 attacks and implementing protective measu
 - Enabled DHCP snooping on switches to block fake DHCP offers.
 - Port security configured to limit MAC addresses.
 
-![dhcp](screenshot/dhcp_server.jpg)
+![dhcp](screenshots/dhcp_server.jpg)
 
-![snooping](screenshot/dhcp_snooping.jpg)
+![snooping](screenshots/dhcp_snooping.jpg)
 
 ### ARP Protection
 - ARP spoofing simulated using Scapy.
 - Dynamic ARP inspection enabled on VLAN 1.
 - Trusted ports defined; ARP spoofing attempts blocked.
 
-![arp](screenshot/arp_inspection.jpg)
+![arp](screenshots/arp_inspection.jpg)
 
-![sniff](screenshot/arp_sniff.jpg)
+![sniff](screenshots/arp_sniff.jpg)
 
 ### STP Protection
 - STP attack simulated by changing root bridge via malicious packets.
 - BPDU filter enabled on access ports to prevent external STP influence.
 
-![config](screenshot/config_bpdu.jpg)
+![config](screenshots/config_bpdu.jpg)
 
-![bdpu](screenshot/bpdu_filter.jpg)
+![bdpu](screenshots/bpdu_filter.jpg)
 
 ## Conclusion
 Layer 2 security is critical for protecting against internal threats. The lab demonstrated real attack scenarios and effective switch-level protections using Scapy and Cisco features.
